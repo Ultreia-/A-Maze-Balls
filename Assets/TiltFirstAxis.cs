@@ -3,7 +3,8 @@ using System.Collections;
 
 public class TiltFirstAxis : MonoBehaviour {
 
-	public GameObject plane;
+	private GameObject plane;
+	public float scale = 1;
 
 	// Use this for initialization
 	void Start () {
@@ -22,12 +23,11 @@ public class TiltFirstAxis : MonoBehaviour {
 		Debug.Log("zPos: " + zPos);
 		Debug.Log("Plane angles: " + xAngle);
 
-
-		float scaledPos = -(zPos/20);
+		float mappedPos = ExtensionMethods.Remap(zPos, -15, 15, -6, 6);
 
 		//Debug.Log (xPos);
 		//Debug.Log (scaledPos);
 
-		plane.transform.rotation = Quaternion.Euler (zPos, yAngle, zAngle);
+		plane.transform.rotation = Quaternion.Euler (mappedPos*scale, yAngle, zAngle);
 	}
 }

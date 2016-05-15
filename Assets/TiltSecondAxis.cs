@@ -3,7 +3,9 @@ using System.Collections;
 
 public class TiltSecondAxis : MonoBehaviour {
 	
-	public GameObject plane;
+	private GameObject plane;
+	public float scale = 1;
+
 
 	// Use this for initialization
 	void Start () {
@@ -23,12 +25,12 @@ public class TiltSecondAxis : MonoBehaviour {
 		Debug.Log("Plane angles: " + zAngle);
 
 
-		float scaledPos = -(xPos/20);
+		float mappedPos = ExtensionMethods.Remap(xPos, -10, 10, 10, -10);
 
 		//Debug.Log (xPos);
 		//Debug.Log (scaledPos);
 
-		plane.transform.rotation = Quaternion.Euler (xAngle, yAngle, xPos);
+		plane.transform.rotation = Quaternion.Euler (xAngle, yAngle, mappedPos*scale);
 
 	}
 }
