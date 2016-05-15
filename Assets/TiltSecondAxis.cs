@@ -16,6 +16,8 @@ public class TiltSecondAxis : MonoBehaviour {
 
 		float xPos = this.transform.position.x;
 		float zAngle = plane.transform.eulerAngles.z;
+		float yAngle = plane.transform.eulerAngles.y;
+		float xAngle = plane.transform.eulerAngles.x;
 
 		Debug.Log("xPos: " + xPos);
 		Debug.Log("Plane angles: " + zAngle);
@@ -26,12 +28,7 @@ public class TiltSecondAxis : MonoBehaviour {
 		//Debug.Log (xPos);
 		//Debug.Log (scaledPos);
 
-		if(xPos > 1 && (zAngle < 9 || zAngle > 352)){
-			plane.transform.Rotate (0, 0, scaledPos);
-		}
+		plane.transform.rotation = Quaternion.Euler (xAngle, yAngle, xPos);
 
-		if(xPos < -1 && (zAngle < 8 || zAngle > 351)){
-			plane.transform.Rotate (0, 0, scaledPos);
-		}
 	}
 }

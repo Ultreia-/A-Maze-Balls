@@ -16,6 +16,8 @@ public class TiltFirstAxis : MonoBehaviour {
 
 		float zPos = this.transform.position.z;
 		float xAngle = plane.transform.eulerAngles.x;
+		float yAngle = plane.transform.eulerAngles.y;
+		float zAngle = plane.transform.eulerAngles.z;
 
 		Debug.Log("zPos: " + zPos);
 		Debug.Log("Plane angles: " + xAngle);
@@ -26,12 +28,6 @@ public class TiltFirstAxis : MonoBehaviour {
 		//Debug.Log (xPos);
 		//Debug.Log (scaledPos);
 
-		if(zPos > 1 && (xAngle < 9 || xAngle > 352)){
-			plane.transform.Rotate (scaledPos, 0, 0);
-		}
-
-		if(zPos < -1 && (xAngle < 8 || xAngle > 351)){
-			plane.transform.Rotate (scaledPos, 0, 0);
-		}
+		plane.transform.rotation = Quaternion.Euler (zPos, yAngle, zAngle);
 	}
 }
