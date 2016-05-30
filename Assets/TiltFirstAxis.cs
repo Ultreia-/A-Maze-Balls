@@ -28,6 +28,6 @@ public class TiltFirstAxis : MonoBehaviour {
 		//Debug.Log (xPos);
 		//Debug.Log (scaledPos);
 
-		plane.transform.rotation = Quaternion.Euler (mappedPos*scale, yAngle, zAngle);
+		plane.transform.rotation = Quaternion.Euler (xAngle, yAngle, mappedPos*scale);
 	}
 }

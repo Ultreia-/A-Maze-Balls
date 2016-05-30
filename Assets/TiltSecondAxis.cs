@@ -25,12 +25,12 @@ public class TiltSecondAxis : MonoBehaviour {
 		Debug.Log("Plane angles: " + zAngle);
 
 
-		float mappedPos = ExtensionMethods.Remap(xPos, -10, 10, 10, -10);
+		float mappedPos = ExtensionMethods.Remap(xPos, -10, 10, -10, 10);
 
 		//Debug.Log (xPos);
 		//Debug.Log (scaledPos);
 
-		plane.transform.rotation = Quaternion.Euler (xAngle, yAngle, mappedPos*scale);
+		plane.transform.rotation = Quaternion.Euler (mappedPos*scale, yAngle, zAngle);
 
 	}
 }
