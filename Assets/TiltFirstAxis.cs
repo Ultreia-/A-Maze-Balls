@@ -20,8 +20,8 @@ public class TiltFirstAxis : MonoBehaviour {
 		float yAngle = plane.transform.eulerAngles.y;
 		float zAngle = plane.transform.eulerAngles.z;
 
-		Debug.Log("zPos: " + zPos);
-		Debug.Log("Plane angles: " + xAngle);
+		//Debug.Log("zPos: " + zPos);
+		//Debug.Log("Plane angles: " + xAngle);
 
 		float mappedPos = ExtensionMethods.Remap(zPos, -15, 15, -6, 6);
 

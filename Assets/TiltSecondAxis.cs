@@ -21,8 +21,8 @@ public class TiltSecondAxis : MonoBehaviour {
 		float yAngle = plane.transform.eulerAngles.y;
 		float xAngle = plane.transform.eulerAngles.x;
 
-		Debug.Log("xPos: " + xPos);
-		Debug.Log("Plane angles: " + zAngle);
+		//Debug.Log("xPos: " + xPos);
+		//Debug.Log("Plane angles: " + zAngle);
 
 
 		float mappedPos = ExtensionMethods.Remap(xPos, -10, 10, -10, 10);
