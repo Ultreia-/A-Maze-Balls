@@ -15,5 +15,12 @@ public class BallCollision : MonoBehaviour {
 	void OnTriggerEnter(Collider other)
 	{
 		Debug.Log ("Collision Detected!");
+		StartCoroutine (resetLevelAfterDelay());
+
+	}
+
+	IEnumerator resetLevelAfterDelay() {
+		yield return new WaitForSeconds(2);
+		Application.LoadLevel(Application.loadedLevel);
 	}
 }
