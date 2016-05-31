@@ -159,6 +159,12 @@ ModelImporter:
     100302: pasted__pCylinder2
     100304: pasted__CylindersForHoles
     100306: pasted__pasted__pasted__pasted__pasted__pasted__pCylinder1 1
+    100308: GoalZone2
+    100310: GoalZone3
+    100312: pasted__GoalZone2
+    100314: pasted__pasted__pasted__pasted__pasted__pasted__pCylinder2
+    100316: pSphere1
+    100318: StartArea
     400000: group
     400002: pasted__pasted__pasted__pCube2
     400004: pasted__pasted__pasted__pCube3
@@ -313,6 +319,12 @@ ModelImporter:
     400302: pasted__pCylinder2
     400304: pasted__CylindersForHoles
     400306: pasted__pasted__pasted__pasted__pasted__pasted__pCylinder1 1
+    400308: GoalZone2
+    400310: GoalZone3
+    400312: pasted__GoalZone2
+    400314: pasted__pasted__pasted__pasted__pasted__pasted__pCylinder2
+    400316: pSphere1
+    400318: StartArea
     2300000: pasted__pasted__pasted__pCube2
     2300002: pasted__pasted__pasted__pCube3
     2300004: pasted__pasted__pCube2
@@ -378,6 +390,10 @@ ModelImporter:
     2300124: Base12
     2300126: pasted__pCylinder2
     2300128: pasted__pasted__pasted__pasted__pasted__pasted__pCylinder1 1
+    2300130: GoalZone2
+    2300132: pasted__GoalZone2
+    2300134: pasted__pasted__pasted__pasted__pasted__pasted__pCylinder2
+    2300136: StartArea
     3300000: pasted__pasted__pasted__pCube2
     3300002: pasted__pasted__pasted__pCube3
     3300004: pasted__pasted__pCube2
@@ -443,6 +459,10 @@ ModelImporter:
     3300124: Base12
     3300126: pasted__pCylinder2
     3300128: pasted__pasted__pasted__pasted__pasted__pasted__pCylinder1 1
+    3300130: GoalZone2
+    3300132: pasted__GoalZone2
+    3300134: pasted__pasted__pasted__pasted__pasted__pasted__pCylinder2
+    3300136: StartArea
     4300000: pCube2
     4300002: pasted__pCube3
     4300004: pasted__pasted__pasted__pCube2
@@ -508,6 +528,10 @@ ModelImporter:
     4300124: Base12
     4300126: pasted__pCylinder2
     4300128: pasted__pasted__pasted__pasted__pasted__pasted__pCylinder1
+    4300130: pasted__pasted__pasted__pasted__pasted__pasted__pCylinder2
+    4300132: StartArea
+    4300134: GoalZone2
+    4300136: pasted__GoalZone2
     9500000: //RootNode
   materials:
     importMaterials: 1
