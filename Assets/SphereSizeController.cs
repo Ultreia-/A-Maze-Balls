@@ -16,16 +16,16 @@ public class SphereSizeController : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-		if (Input.GetKeyDown ("a")) {
-			if (scale < 0.5F) {
-				sphere1.transform.localScale = new Vector3 (1.5F - scale, 1.5F - scale, 1.5F - scale);
-				sphere2.transform.localScale = new Vector3 (1.5F + scale, 1.5F + scale, 1.5F + scale);
-
+		if (Input.GetKey (KeyCode.RightArrow) && scale < 0.5F) {
 				scale = scale + 0.01F;
-
-				Debug.Log (scale);
-			}
 		}
+
+		if (Input.GetKey (KeyCode.LeftArrow) && scale > -0.5F) {
+				scale = scale - 0.01F;
+		}
+
+		sphere1.transform.localScale = new Vector3 (1.5F - scale, 1.5F - scale, 1.5F - scale);
+		sphere2.transform.localScale = new Vector3 (1.5F + scale, 1.5F + scale, 1.5F + scale);
 			
 	}
 }
