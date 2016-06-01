@@ -1,6 +1,11 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:Assets/modifiable.mb.meta
 guid: 4f25f341b221f4ed8bc8050c67ceceb9
 timeCreated: 1464773375
+=======
+guid: 6e6df93962107497b8682017d861647f
+timeCreated: 1464773273
+>>>>>>> cfa834ef6b6db7ab1d8fb2547a076d892adfdf33:Assets/modifiable.mb.meta
 licenseType: Free
 ModelImporter:
   serializedVersion: 19
