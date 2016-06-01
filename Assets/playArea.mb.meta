@@ -166,6 +166,18 @@ ModelImporter:
     100316: pSphere1
     100318: StartArea
     100320: GoalZone1
+    100322: Base1 1
+    100324: Base13
+    100326: Base14
+    100328: Base15
+    100330: transform70
+    100332: transform71
+    100334: transform72
+    100336: transform73
+    100338: transform74
+    100340: transform75
+    100342: Base16
+    100344: transform76
     400000: group
     400002: pasted__pasted__pasted__pCube2
     400004: pasted__pasted__pasted__pCube3
@@ -327,6 +339,18 @@ ModelImporter:
     400316: pSphere1
     400318: StartArea
     400320: GoalZone1
+    400322: Base1 1
+    400324: Base13
+    400326: Base14
+    400328: Base15
+    400330: transform70
+    400332: transform71
+    400334: transform72
+    400336: transform73
+    400338: transform74
+    400340: transform75
+    400342: Base16
+    400344: transform76
     2300000: pasted__pasted__pasted__pCube2
     2300002: pasted__pasted__pasted__pCube3
     2300004: pasted__pasted__pCube2
@@ -398,6 +422,7 @@ ModelImporter:
     2300136: StartArea
     2300138: Base2
     2300140: GoalZone1
+    2300142: Base15
     3300000: pasted__pasted__pasted__pCube2
     3300002: pasted__pasted__pasted__pCube3
     3300004: pasted__pasted__pCube2
@@ -469,6 +494,7 @@ ModelImporter:
     3300136: StartArea
     3300138: Base2
     3300140: GoalZone1
+    3300142: Base15
     4300000: pCube2
     4300002: pasted__pCube3
     4300004: pasted__pasted__pasted__pCube2
@@ -540,6 +566,7 @@ ModelImporter:
     4300136: pasted__GoalZone2
     4300138: Base2
     4300140: GoalZone1
+    4300142: Base15
     9500000: //RootNode
   materials:
     importMaterials: 1
