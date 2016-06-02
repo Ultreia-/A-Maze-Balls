@@ -23,9 +23,10 @@ public class SphereSizeController : MonoBehaviour {
 		if (Input.GetKey (KeyCode.LeftArrow) && scale > -0.5F) {
 				scale = scale - 0.01F;
 		}
-
+		 
 		sphere1.transform.localScale = new Vector3 (1.5F - scale, 1.5F - scale, 1.5F - scale);
 		sphere2.transform.localScale = new Vector3 (1.5F + scale, 1.5F + scale, 1.5F + scale);
 			
 	}
+
 }
