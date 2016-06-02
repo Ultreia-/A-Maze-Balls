@@ -1,10 +1,11 @@
 private var RemoteIP : String = "127.0.0.1";
 private var SendToPort : int = 3334;
-private var sizeSphere1 : String;
 public var ListenerPort : int = 1234;
 
-//public var controller : GameObject;
-var sphereScript : SphereSizeController;
+private var sizeSphere1 : String;
+private var sizeSphere2 : String;
+
+private var sphereScript : SphereSizeController;
 
 private var handler : Osc;
 
@@ -32,8 +33,7 @@ public function UpdateSphere1(oscMessage : OscMessage) : void {
 }
 
 public function UpdateSphere2(oscMessage : OscMessage) : void {
-	var sizeSphere2 = oscMessage.Values[0];
-	sphereScript.setSizeSphere1(sizeSphere2);
-
+	sizeSphere2 = oscMessage.Values[0];
+	sphereScript.setSizeSphere2(sizeSphere2);
 	Debug.Log(sizeSphere2);
 }
