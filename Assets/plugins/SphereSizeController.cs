@@ -8,8 +8,6 @@ public class SphereSizeController : MonoBehaviour {
 	private float diameterSphere1 = 1.5F;
 	private float diameterSphere2 = 1.5F;
 
-	float journeyTime = 1.0F;
-
 	// Use this for initialization
 	void Start () {
 		sphere1 = GameObject.Find("Sphere1");
