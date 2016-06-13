@@ -16,7 +16,7 @@ public class CheckForWinnerScript : MonoBehaviour {
 		if (isInGoalZone1 && isInGoalZone2) {
 			Debug.Log ("Game finished!");
 			//Winning Text Goes Here
-			resetLevel();
+			StartCoroutine (resetLevel ());
 		}
 	}
 
