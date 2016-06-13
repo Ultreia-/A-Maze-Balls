@@ -24,10 +24,10 @@ public class SphereSizeController : MonoBehaviour {
 			//sphere1.transform.localScale = new Vector3(sizeSphere1, sizeSphere1, sizeSphere1);
 
 			Vector3 newSphere1Size = new Vector3 (diameterSphere1, diameterSphere1, diameterSphere1);
-			sphere1.transform.localScale = Vector3.Slerp(sphere1.transform.localScale, newSphere1Size, 0.1F);
+			sphere1.transform.localScale = Vector3.Slerp(sphere1.transform.localScale, newSphere1Size, 0.01F);
 
 			Vector3 newSphere2Size = new Vector3 (diameterSphere2, diameterSphere2, diameterSphere2);
-			sphere2.transform.localScale = Vector3.Slerp(sphere2.transform.localScale, newSphere2Size, 0.1F);
+			sphere2.transform.localScale = Vector3.Slerp(sphere2.transform.localScale, newSphere2Size, 0.01F);
 		}
 	}
 
